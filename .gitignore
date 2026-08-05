@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python bytecode, from running design/favicon/generate.py
+__pycache__/
+
+# derived icons — built from app/icon.svg by scripts/build-icons.mjs, which
+# predev and prebuild run. The SVG is the only icon committed; these two exist
+# only because ICO and Apple touch icons cannot be vector.
+/app/favicon.ico
+/app/apple-icon.png
